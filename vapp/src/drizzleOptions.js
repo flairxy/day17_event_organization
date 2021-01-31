@@ -1,4 +1,4 @@
-import SimpleStorage from "./contracts/SimpleStorage.json";
+import EventContract from "./contracts/EventContract.json";
 
 const options = {
   web3: {
@@ -8,9 +8,9 @@ const options = {
       url: "ws://127.0.0.1:9545",
     },
   },
-  contracts: [SimpleStorage],
+  contracts: [EventContract],
   events: {
-    SimpleStorage: ["StorageSet"],
+    // SimpleStorage: ["StorageSet"],
   },
   polls: {
     accounts: 15000,
